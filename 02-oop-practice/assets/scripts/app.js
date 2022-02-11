@@ -32,7 +32,7 @@ class Component {
         this.hostElement.insertAdjacentElement(this.insertBefore ? 'afterbegin' : 'beforeend', this.element);
     }
 }
-class Tooltip{
+class Tooltip extends Component {
     constructor(closeNotifierFunction) {
         super();
         this.closeNotifier = closeNotifierFunction;
